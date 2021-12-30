@@ -9,3 +9,7 @@
 
 1. На InvalidCredentials он должен обратно клиенту отсылать http статус с кодом 400 и телом в виде сообщения из exception'а
 2. На UnauthorizedUser он должен обратно клиенту отсылать http статус с кодом 401 и телом в виде сообщения из exception'а и писать в консоль сообщение из exception'а
+
+пример запроса
+
+http://localhost:8080/authorize?user=Olga&password=333

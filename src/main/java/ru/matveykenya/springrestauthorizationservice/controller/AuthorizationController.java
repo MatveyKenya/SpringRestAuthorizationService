@@ -18,6 +18,11 @@ public class AuthorizationController {
         this.service = service;
     }
 
+    @GetMapping("/")
+    public String getStringResponse(){
+        return "Nothing / - Make another request!";
+    }
+
     @GetMapping("/authorize")
     public List<Authorities> getAuthorities(@RequestParam("user") String user, @RequestParam("password") String password) {
         return service.getAuthorities(user, password);
